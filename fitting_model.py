@@ -31,7 +31,7 @@ def classifier():
     #vectorizing the strings in the pandas list:
     answersVec = string_to_vec(answers)
     dataVec = np.array(answersVec).tolist()
-    np.savetxt('output/trained_model.csv',dataVec)
+    np.savetxt('output/trained_model.csv',dataVec, delimiter=',')
 
 
 def string_to_vec(dataset):
